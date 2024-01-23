@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link id="linkicon" rel="icon" href="./assets/logo.png">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+  <title>Coin</title>
+  <link rel="stylesheet" href="./assets/coint.css">
+  <link rel="stylesheet" href="./assets/index.css">
+  <style>
+    .display-none {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="">
+  <div id="app">
+    <div class="v_app">
+      <div class="v_register g-flex-column">
+        <div class="v-register-head g-flex-align-center">
+          <div class="v-register-head-back g-flex-align-center">
+            <img src="./assets/icons/row-back-icon.svg" width="23" height="23" style="margin-top: 10px;" />
+          </div>
+        </div>
+        <div class="v-register-container" id="v-register-container">
+          <div class="v-register-title g-flex-align-center g-flex-justify-center">
+            <img src="./assets/logo.png" alt="">
+            <span>Hotcoin</span>
+          </div>
+          <div class="v-register-card-box" id="box-card-register">
+            <div class="v-register-card-title">
+              <span>Register</span>
+            </div>
+            <div class="v-register-card-second-title">
+              <span>Welcome to Hotcoin. Let us create your account</span>
+            </div>
+            <div class="v-nav-list g-flex-align-center">
+              <div class="active v-nav-item" id="email-tab">
+                <span>Email registration</span>
+              </div>
+              <div class="v-nav-item" id="phone-tab">
+                <span>Register your phone</span>
+              </div>
+              <div class="v-nav-item" id="user-tab">
+                <span>User registration</span>
+              </div>
+            </div>
+            <div class="v-form">
+              <div class="v-form-item g-flex-align-center">
+                <div class="v-form-item-left g-flex-align-center">
+                  <img src="./assets/icons/icon_yonghu.svg" width="15" height="15" />
+                </div>
+                <div class="v-form-item-middle-input">
+                  <input type="text" placeholder="Please enter user name" id="username-input" />
+                </div>
+              </div>
+              <div class="v-form-item-out g-flex-align-center display-none" id="phone-controller">
+                <div class="v-form-item-out-left g-flex-align-center" id="country-code-selected">
+                  <span class="v-form-item-out-left-text" id="code-number">+66</span>
+                  <img src="./assets/icons/icon-dropdown.svg" width="12" height="12" style="margin-left: 5px;" />
+                </div>
+                <div class="v-form-item g-flex-align-center">
+                  <div class="v-form-item-middle-input">
+                    <input type="text" placeholder="Please enter phone number" id="phone-number-input">
+                  </div>
+                </div>
+              </div>
+              <div class="v-form-item g-flex-align-center" id="email-controller">
+                <div class="v-form-item-left g-flex-align-center"><img src="./assets/icons/icon-youxiang.svg" width="15"
+                    height="15" /></div>
+                <div class="v-form-item-middle-input">
+                  <input type="text" placeholder="Please input your email" id="user-email-input">
+                </div>
+              </div>
+              <!-- <div class="v-form-item-out g-flex-align-center v-form-item-out-have-right-send">
+                <div class="v-form-item g-flex-align-center">
+                  <div class="v-form-item-left g-flex-align-center"><img src="./assets/icons/icon-yanzhengma.svg"
+                      width="15" height="15" /></div>
+                  <div class="v-form-item-middle-input"><input type="text" placeholder="Please enter verification code" id="otp"></div>
+                </div>
+                <div class="v-form-item-out-middle-right g-flex-align-center"><span
+                    class="v-form-item-out-middle-right-text">Send</span></div>
+              </div> -->
+              <div class="v-form-item g-flex-align-center">
+                <div class="v-form-item-left g-flex-align-center">
+                  <img src="./assets/icons/icon-yanzhengma.svg" width="15" height="15" />
+                </div>
+                <div class="v-form-item-middle-input">
+                  <input type="text" placeholder="Please enter verification code" id="otp">
+                </div>
+                <div class="v-form-item-middle-right g-flex-align-center">
+                  <img src="https://coin.ccsjr.com/main/index/imgVertify?key=1705997488777" alt="">
+                </div>
+              </div>
+
+
+              <div class="v-form-item g-flex-align-center">
+                <div class="v-form-item-left g-flex-align-center">
+                  <img src="./assets/icons/icon_mima.svg" width="15" height="15" />
+                </div>
+                <div class="v-form-item-middle-input">
+                  <input type="password" placeholder="Please enter password" id="password-input">
+                </div>
+                <div class="v-form-item-middle-right g-flex-align-center">
+                    <img src="./assets/icons/icon_bukejian.svg" width="15" height="15" style="margin-left: 80%;"
+                    id="hide-password" />
+                  <img src="./assets/icons/icon-kanjian.svg" class="display-none" width="15" height="15"
+                    style="margin-left: 80%;" id="show-password" />
+                </div>
+              </div>
+              <div class="v-form-item g-flex-align-center">
+                <div class="v-form-item-left g-flex-align-center"><img src="./assets/icons/icon_mima.svg" width="15"
+                    height="15" /></div>
+                <div class="v-form-item-middle-input"><input type="password" placeholder="Enter password again"
+                    id="confirm-password-input"></div>
+                <div class="v-form-item-middle-right g-flex-align-center">
+                  <img src="./assets/icons/icon_bukejian.svg" width="15" height="15" style="margin-left: 80%;"
+                    id="hide-confirm-password" />
+                  <img src="./assets/icons/icon-kanjian.svg" width="15" height="15" style="margin-left: 80%;"
+                    class="display-none" id="show-confirm-password" />
+                </div>
+              </div>
+              <div class="v-form-item g-flex-align-center">
+                <div class="v-form-item-left g-flex-align-center"><img src="./assets/icons/icon_yaoqinghaoyou.svg"
+                    width="15" height="15" /></div>
+                <div class="v-form-item-middle-input">
+                  <input type="text" placeholder="Invitation code" id="invitation-code-input">
+                </div>
+              </div>
+              <div class="v-form-btn-box">
+                <div class="v-form-btn g-flex-align-center g-flex-justify-center">
+                  <span>Register</span>
+                </div>
+              </div>
+              <div class="v-form-bottom g-flex-align-center g-flex-justify-between">
+                <div class="v-form-bottom-item g-flex-align-center">
+                  <div class="v-form-bottom-item-title">
+                    <span>Already have an account?</span>
+                  </div>
+                  <div class="v-form-bottom-item-val">
+                    <span>Go to login</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c_bind_phone_pop" id="select-country-code" style="background: black;">
+          <div class="van-overlay display-none" role="button" tabindex="0" style="z-index: 100;" id="overlay-class">
+          </div>
+          <div role="dialog" id="dialog" tabindex="0"
+            class="van-popup van-popup--right van-safe-area-bottom c-pop van-popup-slide-right-enter-active van-popup-slide-right-enter-from"
+            style="z-index: 2001; height: 100%; width: 90%;;">
+            <div class="c-bind-phone-container g-flex-column">
+              <div class="c-pop-close" id="close-btn"><img src="./assets/icons/icon-close.svg" width="16" height="16"
+                  style="margin-top: 8px;"></div>
+              <p class="c-bind-phone-pop-title">Select country or region</p>
+              <div class="van-search van-search--show-action c-bind-phone-pop-search"><!---->
+                <div class="van-search__content van-search__content--square"><!---->
+                  <div class="van-cell van-cell--borderless van-field van-search__field c-bind-phone-pop-search">
+                    <div class="van-field__left-icon"><i
+                        class="van-badge__wrapper van-icon van-icon-search"><!----><!----><!----></i></div><!---->
+                    <div class="van-cell__value van-cell__value--alone van-field__value">
+                      <div class="van-field__body"><input type="search" id="van-search-1-input"
+                          class="van-field__control" placeholder="Please enter country to search"><!----><!----><!---->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="van-search__action" role="button" tabindex="0">
+                  <div>Search</div>
+                </div>
+              </div>
+              <ul class="c-bind-phone-list" id="list-country-code">
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="1">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/th.png"
+                      alt=""><span>Thailand (ไทย)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+66</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="2">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/al.png"
+                      alt=""><span>Albania (Shqipëri)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+355</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="3">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/dz.png"
+                      alt=""><span>Algeria (‫الجزائر‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+213</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="4">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/as.png"
+                      alt=""><span>American Samoa</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1684</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="5">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ad.png"
+                      alt=""><span>Andorra</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+376</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="6">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ao.png"
+                      alt=""><span>Angola</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+244</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="7">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ai.png"
+                      alt=""><span>Anguilla</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1264</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="8">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ag.png"
+                      alt=""><span>Antigua and Barbuda</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1268</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="9">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ar.png"
+                      alt=""><span>Argentina</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+54</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="10">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/am.png"
+                      alt=""><span>Armenia (Հայաստան)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+374</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="12">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/aw.png"
+                      alt=""><span>Aruba</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+297</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="13">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/au.png"
+                      alt=""><span>Australia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+61</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="14">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/at.png"
+                      alt=""><span>Austria (Österreich)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+43</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="15">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/az.png"
+                      alt=""><span>Azerbaijan (Azərbaycan)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+994</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="16">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bs.png"
+                      alt=""><span>Bahamas</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1242</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="17">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bh.png"
+                      alt=""><span>Bahrain (‫البحرين‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+973</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="18">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bd.png"
+                      alt=""><span>Bangladesh (বাংলাদেশ)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+880</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="19">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bb.png"
+                      alt=""><span>Barbados</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1246</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="20">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/by.png"
+                      alt=""><span>Belarus (Беларусь)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+375</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="21">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/be.png"
+                      alt=""><span>Belgium (België)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+32</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="22">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bz.png"
+                      alt=""><span>Belize</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+501</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="23">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bj.png"
+                      alt=""><span>Benin (Bénin)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+229</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="24">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bm.png"
+                      alt=""><span>Bermuda</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1441</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="25">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bt.png"
+                      alt=""><span>Bhutan (འབྲུག)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+975</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="26">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bo.png"
+                      alt=""><span>Bolivia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+591</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="27">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ba.png"
+                      alt=""><span>Bosnia and Herzegovina (Босна и Херцеговина)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+387</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="28">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bw.png"
+                      alt=""><span>Botswana</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+267</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="29">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/br.png"
+                      alt=""><span>Brazil (Brasil)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+55</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="30">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/io.png"
+                      alt=""><span>British Indian Ocean Territory</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+246</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="31">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/vg.png"
+                      alt=""><span>British Virgin Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1284</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="32">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bn.png"
+                      alt=""><span>Brunei</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+673</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="33">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bg.png"
+                      alt=""><span>Bulgaria (България)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+359</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="34">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bf.png"
+                      alt=""><span>Burkina Faso</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+226</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="35">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bi.png"
+                      alt=""><span>Burundi (Uburundi)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+257</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="36">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kh.png"
+                      alt=""><span>Cambodia (កម្ពុជា)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+855</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="37">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cm.png"
+                      alt=""><span>Cameroon (Cameroun)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+237</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="38">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ca.png"
+                      alt=""><span>Canada</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="39">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cv.png"
+                      alt=""><span>Cape Verde (Kabu Verdi)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+238</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="40">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bq.png"
+                      alt=""><span>Caribbean Netherlands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+599</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="41">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ky.png"
+                      alt=""><span>Cayman Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1345</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between"id="42">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cf.png"
+                      alt=""><span>Central African Republic (République centrafricaine)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+236</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="43">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/td.png"
+                      alt=""><span>Chad (Tchad)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+235</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="44">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cl.png"
+                      alt=""><span>Chile</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+56</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="45">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cx.png"
+                      alt=""><span>Christmas Island</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+61</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="46">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cc.png"
+                      alt=""><span>Cocos (Keeling) Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+61</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="47">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/co.png"
+                      alt=""><span>Colombia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+57</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="48">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/km.png"
+                      alt=""><span>Comoros (‫جزر القمر‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+269</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="49">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cd.png"
+                      alt=""><span>Congo (DRC) (Jamhuri ya Kidemokrasia ya Kongo)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+243</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="50">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cg.png"
+                      alt=""><span>Congo (Republic) (Congo-Brazzaville)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+242</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="51">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ck.png"
+                      alt=""><span>Cook Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+682</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="52">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cr.png"
+                      alt=""><span>Costa Rica</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+506</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="53">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ci.png"
+                      alt=""><span>Côte d’Ivoire</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+225</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="54">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/hr.png"
+                      alt=""><span>Croatia (Hrvatska)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+385</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="55">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cu.png"
+                      alt=""><span>Cuba</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+53</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="56">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cw.png"
+                      alt=""><span>Curaçao</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+599</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="57">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cy.png"
+                      alt=""><span>Cyprus (Κύπρος)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+357</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="58">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/cz.png"
+                      alt=""><span>Czech Republic (Česká republika)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+420</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="59">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/dk.png"
+                      alt=""><span>Denmark (Danmark)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+45</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="60">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/dj.png"
+                      alt=""><span>Djibouti</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+253</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="61">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/dm.png"
+                      alt=""><span>Dominica</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1767</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="62">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/do.png"
+                      alt=""><span>Dominican Republic (República Dominicana)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="63">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ec.png"
+                      alt=""><span>Ecuador</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+593</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="64">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/eg.png"
+                      alt=""><span>Egypt (‫مصر‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+20</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="65">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sv.png"
+                      alt=""><span>El Salvador</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+503</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="66">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gq.png"
+                      alt=""><span>Equatorial Guinea (Guinea Ecuatorial)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+240</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="67">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/er.png"
+                      alt=""><span>Eritrea</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+291</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="68">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ee.png"
+                      alt=""><span>Estonia (Eesti)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+372</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="69">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sz.png"
+                      alt=""><span>Eswatini</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+268</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="70">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/et.png"
+                      alt=""><span>Ethiopia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+251</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="71">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fk.png"
+                      alt=""><span>Falkland Islands (Islas Malvinas)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+500</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="72">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fo.png"
+                      alt=""><span>Faroe Islands (Føroyar)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+298</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="73">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fj.png"
+                      alt=""><span>Fiji</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+679</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="74">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fi.png"
+                      alt=""><span>Finland (Suomi)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+358</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="75">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fr.png"
+                      alt=""><span>France</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+33</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="76">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gf.png"
+                      alt=""><span>French Guiana (Guyane française)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+594</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="77">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pf.png"
+                      alt=""><span>French Polynesia (Polynésie française)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+689</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="78">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ga.png"
+                      alt=""><span>Gabon</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+241</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="79">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gm.png"
+                      alt=""><span>Gambia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+220</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="80">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ge.png"
+                      alt=""><span>Georgia (საქართველო)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+995</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="80">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/de.png"
+                      alt=""><span>Germany (Deutschland)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+49</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="81">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gh.png"
+                      alt=""><span>Ghana (Gaana)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+233</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="82">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gi.png"
+                      alt=""><span>Gibraltar</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+350</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="83">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gr.png"
+                      alt=""><span>Greece (Ελλάδα)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+30</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="84">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gl.png"
+                      alt=""><span>Greenland (Kalaallit Nunaat)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+299</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="85">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gd.png"
+                      alt=""><span>Grenada</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1473</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="86">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gp.png"
+                      alt=""><span>Guadeloupe</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+590</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="87">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gu.png"
+                      alt=""><span>Guam</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1671</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="88">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gt.png"
+                      alt=""><span>Guatemala</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+502</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="89">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gn.png"
+                      alt=""><span>Guinea (Guinée)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+224</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="90">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gw.png"
+                      alt=""><span>Guinea-Bissau (Guiné Bissau)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+245</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="91">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gy.png"
+                      alt=""><span>Guyana</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+592</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="92">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ht.png"
+                      alt=""><span>Haiti</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+509</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="93">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/hn.png"
+                      alt=""><span>Honduras</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+504</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="94">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/hk.png"
+                      alt=""><span>Hong Kong (香港)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+852</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="95">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/hu.png"
+                      alt=""><span>Hungary (Magyarország)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+36</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="96">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/is.png"
+                      alt=""><span>Iceland (Ísland)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+354</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="97">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/in.png"
+                      alt=""><span>India (भारत)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+91</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="98">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/id.png"
+                      alt=""><span>Indonesia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+62</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="99">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ir.png"
+                      alt=""><span>Iran (‫ایران‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+98</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="100">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/iq.png"
+                      alt=""><span>Iraq (‫العراق‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+964</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="101">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ie.png"
+                      alt=""><span>Ireland</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+353</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="102">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/il.png"
+                      alt=""><span>Israel (‫ישראל‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+972</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="103">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/it.png"
+                      alt=""><span>Italy (Italia)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+39</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="104">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/jm.png"
+                      alt=""><span>Jamaica</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1876</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="105">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/jp.png"
+                      alt=""><span>Japan (日本)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+81</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="106">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/jo.png"
+                      alt=""><span>Jordan (‫الأردن‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+962</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="107">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kz.png"
+                      alt=""><span>Kazakhstan (Казахстан)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+7</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="108">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ke.png"
+                      alt=""><span>Kenya</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+254</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="109">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ki.png"
+                      alt=""><span>Kiribati</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+686</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="110">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/xk.png"
+                      alt=""><span>Kosovo</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+383</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="111">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kw.png"
+                      alt=""><span>Kuwait (‫الكويت‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+965</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="112">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kg.png"
+                      alt=""><span>Kyrgyzstan (Кыргызстан)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+996</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="113">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/la.png"
+                      alt=""><span>Laos (ລາວ)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+856</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="114">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lv.png"
+                      alt=""><span>Latvia (Latvija)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+371</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="115">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lb.png"
+                      alt=""><span>Lebanon (‫لبنان‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+961</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="116">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ls.png"
+                      alt=""><span>Lesotho</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+266</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="117">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lr.png"
+                      alt=""><span>Liberia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+231</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="118">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ly.png"
+                      alt=""><span>Libya (‫ليبيا‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+218</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="119">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/li.png"
+                      alt=""><span>Liechtenstein</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+423</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="120">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lt.png"
+                      alt=""><span>Lithuania (Lietuva)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+370</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="121">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lu.png"
+                      alt=""><span>Luxembourg</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+352</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="122">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mo.png"
+                      alt=""><span>Macau (澳門)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+853</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="123">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mk.png"
+                      alt=""><span>North Macedonia (Македонија)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+389</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="124">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mg.png"
+                      alt=""><span>Madagascar (Madagasikara)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+261</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="125">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mw.png"
+                      alt=""><span>Malawi</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+265</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="126">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/my.png"
+                      alt=""><span>Malaysia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+60</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="127">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mv.png"
+                      alt=""><span>Maldives</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+960</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="128">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ml.png"
+                      alt=""><span>Mali</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+223</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="129">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mt.png"
+                      alt=""><span>Malta</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+356</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="130">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mh.png"
+                      alt=""><span>Marshall Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+692</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="131">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mq.png"
+                      alt=""><span>Martinique</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+596</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="132">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mr.png"
+                      alt=""><span>Mauritania (‫موريتانيا‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+222</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="133">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mu.png"
+                      alt=""><span>Mauritius (Moris)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+230</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="134">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/yt.png"
+                      alt=""><span>Mayotte</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+262</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="135">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mx.png"
+                      alt=""><span>Mexico (México)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+52</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="136">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/fm.png"
+                      alt=""><span>Micronesia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+691</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="137">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/md.png"
+                      alt=""><span>Moldova (Republica Moldova)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+373</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="138">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mc.png"
+                      alt=""><span>Monaco</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+377</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="139">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mn.png"
+                      alt=""><span>Mongolia (Монгол)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+976</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="140">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/me.png"
+                      alt=""><span>Montenegro (Crna Gora)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+382</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="141">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ms.png"
+                      alt=""><span>Montserrat</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1664</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="142">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ma.png"
+                      alt=""><span>Morocco (‫المغرب‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+212</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="143">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mz.png"
+                      alt=""><span>Mozambique (Moçambique)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+258</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="144">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mm.png"
+                      alt=""><span>Myanmar (Burma) (မြန်မာ)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+95</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="145">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/na.png"
+                      alt=""><span>Namibia (Namibië)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+264</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="146">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nr.png"
+                      alt=""><span>Nauru</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+674</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="147">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/np.png"
+                      alt=""><span>Nepal (नेपाल)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+977</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="148">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nl.png"
+                      alt=""><span>Netherlands (Nederland)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+31</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="149">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nc.png"
+                      alt=""><span>New Caledonia (Nouvelle-Calédonie)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+687</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="150">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nz.png"
+                      alt=""><span>New Zealand</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+64</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="160">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ni.png"
+                      alt=""><span>Nicaragua</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+505</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="161">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ne.png"
+                      alt=""><span>Niger (Nijar)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+227</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="162">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ng.png"
+                      alt=""><span>Nigeria</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+234</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="163">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nu.png"
+                      alt=""><span>Niue</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+683</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="164">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/nf.png"
+                      alt=""><span>Norfolk Island</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+672</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="165">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kp.png"
+                      alt=""><span>North Korea (조선 민주주의 인민 공화국)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+850</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="166">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mp.png"
+                      alt=""><span>Northern Mariana Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1670</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="167">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/no.png"
+                      alt=""><span>Norway (Norge)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+47</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="168">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/om.png"
+                      alt=""><span>Oman (‫عُمان‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+968</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="169">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pk.png"
+                      alt=""><span>Pakistan (‫پاکستان‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+92</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="170">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pw.png"
+                      alt=""><span>Palau</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+680</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="171">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ps.png"
+                      alt=""><span>Palestine (‫فلسطين‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+970</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="172">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pa.png"
+                      alt=""><span>Panama (Panamá)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+507</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="173">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pg.png"
+                      alt=""><span>Papua New Guinea</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+675</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="174">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/py.png"
+                      alt=""><span>Paraguay</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+595</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="175">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pe.png"
+                      alt=""><span>Peru (Perú)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+51</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="176">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ph.png"
+                      alt=""><span>Philippines</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+63</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="177">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pl.png"
+                      alt=""><span>Poland (Polska)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+48</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="178">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pt.png"
+                      alt=""><span>Portugal</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+351</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="179">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pr.png"
+                      alt=""><span>Puerto Rico</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="180">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/qa.png"
+                      alt=""><span>Qatar (‫قطر‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+974</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="181">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/re.png"
+                      alt=""><span>Réunion (La Réunion)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+262</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="182">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ro.png"
+                      alt=""><span>Romania (România)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+40</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="183">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ru.png"
+                      alt=""><span>Russia (Россия)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+7</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="184">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/rw.png"
+                      alt=""><span>Rwanda</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+250</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between" id="185">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/bl.png"
+                      alt=""><span>Saint Barthélemy</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+590</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sh.png"
+                      alt=""><span>Saint Helena</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+290</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kn.png"
+                      alt=""><span>Saint Kitts and Nevis</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1869</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lc.png"
+                      alt=""><span>Saint Lucia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1758</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/mf.png"
+                      alt=""><span>Saint Martin (Saint-Martin (partie française))</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+590</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/pm.png"
+                      alt=""><span>Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+508</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/vc.png"
+                      alt=""><span>Saint Vincent and the Grenadines</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1784</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ws.png"
+                      alt=""><span>Samoa</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+685</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sm.png"
+                      alt=""><span>San Marino</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+378</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/st.png"
+                      alt=""><span>São Tomé and Príncipe (São Tomé e Príncipe)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+239</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sa.png"
+                      alt=""><span>Saudi Arabia (‫المملكة العربية السعودية‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+966</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sn.png"
+                      alt=""><span>Senegal (Sénégal)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+221</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/rs.png"
+                      alt=""><span>Serbia (Србија)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+381</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sc.png"
+                      alt=""><span>Seychelles</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+248</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sl.png"
+                      alt=""><span>Sierra Leone</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+232</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sg.png"
+                      alt=""><span>Singapore</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+65</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sx.png"
+                      alt=""><span>Sint Maarten</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1721</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sk.png"
+                      alt=""><span>Slovakia (Slovensko)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+421</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/si.png"
+                      alt=""><span>Slovenia (Slovenija)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+386</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sb.png"
+                      alt=""><span>Solomon Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+677</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/so.png"
+                      alt=""><span>Somalia (Soomaaliya)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+252</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/za.png"
+                      alt=""><span>South Africa</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+27</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/kr.png"
+                      alt=""><span>South Korea (대한민국)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+82</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ss.png"
+                      alt=""><span>South Sudan (‫جنوب السودان‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+211</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/es.png"
+                      alt=""><span>Spain (España)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+34</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/lk.png"
+                      alt=""><span>Sri Lanka (ශ්‍රී ලංකාව)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+94</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sd.png"
+                      alt=""><span>Sudan (‫السودان‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+249</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sr.png"
+                      alt=""><span>Suriname</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+597</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sj.png"
+                      alt=""><span>Svalbard and Jan Mayen</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+47</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/se.png"
+                      alt=""><span>Sweden (Sverige)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+46</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ch.png"
+                      alt=""><span>Switzerland (Schweiz)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+41</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/sy.png"
+                      alt=""><span>Syria (‫سوريا‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+963</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tw.png"
+                      alt=""><span>Taiwan (台灣)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+886</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tj.png"
+                      alt=""><span>Tajikistan</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+992</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tz.png"
+                      alt=""><span>Tanzania</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+255</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tl.png"
+                      alt=""><span>Timor-Leste</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+670</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tg.png"
+                      alt=""><span>Togo</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+228</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tk.png"
+                      alt=""><span>Tokelau</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+690</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/to.png"
+                      alt=""><span>Tonga</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+676</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tt.png"
+                      alt=""><span>Trinidad and Tobago</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1868</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tn.png"
+                      alt=""><span>Tunisia (‫تونس‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+216</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tr.png"
+                      alt=""><span>Turkey (Türkiye)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+90</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tm.png"
+                      alt=""><span>Turkmenistan</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+993</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tc.png"
+                      alt=""><span>Turks and Caicos Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1649</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/tv.png"
+                      alt=""><span>Tuvalu</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+688</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/vi.png"
+                      alt=""><span>U.S. Virgin Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1340</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ug.png"
+                      alt=""><span>Uganda</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+256</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ua.png"
+                      alt=""><span>Ukraine (Україна)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+380</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/gb.png"
+                      alt=""><span>United Kingdom</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+44</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/us.png"
+                      alt=""><span>United States</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+1</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/uy.png"
+                      alt=""><span>Uruguay</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+598</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/uz.png"
+                      alt=""><span>Uzbekistan (Oʻzbekiston)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+998</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/vu.png"
+                      alt=""><span>Vanuatu</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+678</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/va.png"
+                      alt=""><span>Vatican City (Città del Vaticano)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+39</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ve.png"
+                      alt=""><span>Venezuela</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+58</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/vn.png"
+                      alt=""><span>Vietnam (Việt Nam)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+84</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/wf.png"
+                      alt=""><span>Wallis and Futuna (Wallis-et-Futuna)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+681</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/eh.png"
+                      alt=""><span>Western Sahara (‫الصحراء الغربية‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+212</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ye.png"
+                      alt=""><span>Yemen (‫اليمن‬‎)</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+967</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/zm.png"
+                      alt=""><span>Zambia</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+260</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/zw.png"
+                      alt=""><span>Zimbabwe</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+263</p>
+                  </div>
+                </li>
+                <li class="c-bind-phone-item g-flex-align-center g-flex-justify-between">
+                  <div class="c-bind-phone-item-left g-flex-align-center"><img src="./Hotcoin_files/ax.png"
+                      alt=""><span>Åland Islands</span></div>
+                  <div class="c-bind-phone-item-right">
+                    <p>+358</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="c-bind-phone-list" style="display: none;"></ul>
+            </div><!---->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+
+  const registerInfo = {
+    username: '',
+    email: '',
+    otp: '',
+    password: '',
+    confirm_password: '',
+    invitation_code: '',
+    phone_number: ''
+  }
+
+
+  const typeOfEvent = {
+    focus_in: 'focusin',
+    focus_out: 'focusout',
+    click: 'click',
+    input: 'input'
+  }
+
+  const displayTextEvent = {
+    text: 'text',
+    password: 'password'
+  }
+
+  const vInputFocus = ' v-input-focus'
+  const vInputError = ' v-input-error'
+  const classDisplayNone = 'display-none'
+  const classActive = 'active'
+  const classActiveVNavItem = 'active v-nav-item'
+
+
+  /************************Input Event *****************************/
+
+  const usernameInputEl = document.getElementById('username-input')
+  usernameInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    usernameInputEl.className = vInputFocus
+  });
+
+  usernameInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.username == '') {
+      usernameInputEl.className = vInputError
+      return;
+    }
+    usernameInputEl.className = ''
+
+  });
+
+  usernameInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.username = usernameInputEl.value
+  });
+
+
+  const emailInputEl = document.getElementById('user-email-input')
+  emailInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    emailInputEl.className = vInputFocus
+  });
+
+  emailInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.email == '') {
+      emailInputEl.className = vInputError
+      return;
+    }
+    emailInputEl.className = ''
+
+  });
+
+  emailInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.email = emailInputEl.value
+  });
+
+
+  const phoneInputEl = document.getElementById('phone-number-input')
+  phoneInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    phoneInputEl.className = vInputFocus
+  });
+
+  phoneInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.phone_number == '') {
+      phoneInputEl.className = vInputError
+      return;
+    }
+    phoneInputEl.className = ''
+
+  });
+
+  phoneInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.phone_number = phoneInputEl.value
+  });
+
+  const verifyCodeEl = document.getElementById('otp')
+  verifyCodeEl.addEventListener(typeOfEvent.focus_in, () => {
+    verifyCodeEl.className = vInputFocus
+  });
+
+  verifyCodeEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.otp == '') {
+      verifyCodeEl.className = vInputError
+      return;
+    }
+    verifyCodeEl.className = '';
+
+  });
+
+  verifyCodeEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.otp = verifyCodeEl.value
+  });
+
+
+  const passwordInputEl = document.getElementById('password-input')
+  passwordInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    passwordInputEl.className = vInputFocus;
+  });
+
+  passwordInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.password == '') {
+      passwordInputEl.className = vInputError;
+      return;
+    }
+    passwordInputEl.className = '';
+
+  });
+
+  passwordInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.password = passwordInputEl.value
+  });
+
+
+  const confirmPasswordInputEl = document.getElementById('confirm-password-input')
+  confirmPasswordInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    confirmPasswordInputEl.className = vInputFocus;
+  });
+
+  confirmPasswordInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.confirm_password == '') {
+      confirmPasswordInputEl.className = vInputError
+      return;
+    }
+    confirmPasswordInputEl.className = ''
+
+  });
+
+  confirmPasswordInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.confirm_password = confirmPasswordInputEl.value
+  });
+
+
+
+  const invitationCodeInputEl = document.getElementById('invitation-code-input')
+  invitationCodeInputEl.addEventListener(typeOfEvent.focus_in, () => {
+    invitationCodeInputEl.className = vInputFocus
+  });
+
+  invitationCodeInputEl.addEventListener(typeOfEvent.focus_out, () => {
+    if (registerInfo.invitation_code == '') {
+      invitationCodeInputEl.className = vInputError
+      return;
+    }
+    invitationCodeInputEl.className = ''
+
+  });
+
+  invitationCodeInputEl.addEventListener(typeOfEvent.input, () => {
+    registerInfo.invitation_code = invitationCodeInputEl.value
+  });
+
+  /************************* Tab Event *****************************/
+
+  const emailTabEl = document.getElementById('email-tab')
+  const phoneTabEl = document.getElementById('phone-tab')
+  const userTabEl = document.getElementById('user-tab')
+  const emailCtlEl = document.getElementById('email-controller')
+  const phoneCtlEl = document.getElementById('phone-controller')
+
+  emailTabEl.addEventListener(typeOfEvent.click, () => {
+    phoneTabEl.classList.remove(classActive)
+    userTabEl.classList.remove(classActive)
+    emailTabEl.className = classActiveVNavItem
+    emailCtlEl.classList.remove(classDisplayNone)
+    emailCtlEl.className = 'v-form-item g-flex-align-center'
+    phoneCtlEl.className = classDisplayNone
+  })
+
+  phoneTabEl.addEventListener(typeOfEvent.click, () => {
+    emailTabEl.classList.remove(classActive)
+    userTabEl.classList.remove(classActive)
+    phoneTabEl.className = classActiveVNavItem
+    phoneCtlEl.classList.remove(classDisplayNone)
+    phoneCtlEl.className = 'v-form-item-out g-flex-align-center'
+    emailCtlEl.className = classDisplayNone
+  })
+
+
+  userTabEl.addEventListener(typeOfEvent.click, () => {
+    emailTabEl.classList.remove(classActive)
+    phoneTabEl.classList.remove(classActive)
+    userTabEl.className = classActiveVNavItem
+    phoneCtlEl.className = classDisplayNone
+    emailCtlEl.className = classDisplayNone
+  })
+
+  const hidePassword = document.getElementById('hide-password')
+  const showPassword = document.getElementById('show-password')
+
+  hidePassword.addEventListener(typeOfEvent.click, () => {
+    showPassword.classList.remove(classDisplayNone)
+    hidePassword.className = classDisplayNone
+    passwordInputEl.type = displayTextEvent.text
+  })
+
+  showPassword.addEventListener(typeOfEvent.click, () => {
+    hidePassword.classList.remove(classDisplayNone)
+    showPassword.className = classDisplayNone
+    passwordInputEl.type = displayTextEvent.password
+  })
+
+
+  const hideConfirmPassword = document.getElementById('hide-confirm-password')
+  const showConfirmPassword = document.getElementById('show-confirm-password')
+
+  hideConfirmPassword.addEventListener(typeOfEvent.click, (val) => {
+    showConfirmPassword.classList.remove(classDisplayNone)
+    hideConfirmPassword.className = classDisplayNone
+    confirmPasswordInputEl.type = displayTextEvent.text
+  })
+
+  showConfirmPassword.addEventListener(typeOfEvent.click, (val) => {
+    hideConfirmPassword.classList.remove(classDisplayNone)
+    showConfirmPassword.className = classDisplayNone
+    confirmPasswordInputEl.type = displayTextEvent.password
+  })
+
+  const selectCountryEl = document.getElementById('select-country-code')
+  const closeBtnEl = document.getElementById('close-btn')
+  const overClass = document.getElementById('overlay-class')
+  const dialogEl = document.getElementById('dialog')
+
+  closeBtnEl.addEventListener(typeOfEvent.click, () => {
+    selectCountryEl.className = 'c_bind_phone_pop'
+    document.body.className = ''
+    overClass.className = ' van-overlay van-fade-leave display-none'
+    dialogEl.className = 'van-popup van-popup--right van-safe-area-bottom c-pop van-popup-slide-right-enter-active van-popup-slide-right-enter-from'
+  })
+
+  var isOpen = false;
+
+  const countryCodeSelectdEl = document.getElementById('country-code-selected')
+  countryCodeSelectdEl.addEventListener(typeOfEvent.click, () => {
+    selectCountryEl.className = 'c_bind_phone_pop'
+    document.body.className = 'van-overflow-hidden'
+    overClass.className = ' van-overlay van-fade-enter-active van-fade-enter-to'
+    dialogEl.className = 'van-popup van-popup--right van-safe-area-bottom c-pop van-popup-slide-right-enter-active van-popup-slide-right-enter-active'
+
+  })
+
+  const vRegisterContainerEl = document.getElementById('list-country-code')
+
+  vRegisterContainerEl.addEventListener(typeOfEvent.click, (val) => {
+    selectCountryEl.className = 'c_bind_phone_pop'
+    document.body.className = ''
+    overClass.className = ' van-overlay van-fade-leave display-none'
+    dialogEl.className = 'van-popup van-popup--right van-safe-area-bottom c-pop van-popup-slide-right-enter-active van-popup-slide-right-enter-from'
+  });
+
+
+
+  overClass.addEventListener('click', () => {
+    selectCountryEl.className = 'c_bind_phone_pop'
+    document.body.className = ''
+    overClass.className = ' van-overlay van-fade-leave display-none'
+    dialogEl.className = 'van-popup van-popup--right van-safe-area-bottom c-pop van-popup-slide-right-enter-active van-popup-slide-right-enter-from'
+  })
+ 
+
+  for (let i = 1; i < 185; i++) {
+    const node = document.getElementById(i.toString());
+    if (!node) continue
+    const clone = node.cloneNode(true);
+    node.addEventListener(typeOfEvent.click, (val) => {
+      var countryCode = clone.getElementsByTagName('p')[0].innerHTML
+      countryCodeSelectdEl.getElementsByTagName('span')[0].innerHTML =  countryCode
+    })
+  }
+
+
+
+
+
+</script>

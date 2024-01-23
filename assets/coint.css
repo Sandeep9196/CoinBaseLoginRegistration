@@ -1,0 +1,371 @@
+
+
+.c_bind_phone_pop .van-overlay {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+
+.c_bind_phone_pop .c-pop {
+    position: absolute
+}
+
+.c_bind_phone_pop .c-bind-phone-container {
+    height: 100%;
+    overflow: auto;
+    background: var(--g-main-bgColor)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-pop-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-pop-close .iconfont {
+    font-size: 22px;
+    color: var(--g-white)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-title {
+    padding: 15px 10px 8px 8px;
+    color: var(--g-white);
+    font-size: 16px;
+    font-weight: 700
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-search {
+    background: var(--g-main_less_bgColor)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-search .van-search__action {
+    color: var(--g-white)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-search .van-search__content {
+    padding-left: 0;
+    background: var(--g-main_less_bgColor)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-search .van-search__content .van-search__field {
+    padding: 15px;
+    border: 1px solid var(--g-main_borderColor);
+    border-radius: 4px
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-pop-search .van-search__content .van-search__field input {
+    color: var(--g-white)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-list {
+    flex: 1;
+    overflow: auto;
+    padding-left: 15px
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-list .c-bind-phone-item {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--g-main_borderColor);
+    line-height: 20px;
+    color: var(--g-less-most-white)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-list .c-bind-phone-item .c-bind-phone-item-left {
+    color: var(--g-white)
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-list .c-bind-phone-item .c-bind-phone-item-left img {
+    margin-right: 10px;
+    width: 20px
+}
+
+.c_bind_phone_pop .c-bind-phone-container .c-bind-phone-list .c-bind-phone-item .c-bind-phone-item-right {
+    padding-left: 5px;
+    color: var(--g-white)
+}
+
+.v_register {
+    height: 100%;
+    overflow: auto;
+    background-color: var(--g-main-bgColor);
+    padding-top: 10px
+}
+
+.v_register .v-register-head {
+    width: 100%;
+    padding: 0 24px;
+    height: 50px;
+    background-color: var(--g-main-bgColor)
+}
+
+.v_register .v-register-head .v-register-head-back .iconfont {
+    font-size: 26px;
+    color: var(--g-white)
+}
+
+.v_register .v-register-head .v-register-head-language .v-register-head-language-img img {
+    width: 26px
+}
+
+.v_register .v-register-head .v-register-head-language .v-register-head-language-img .iconfont {
+    font-size: 22px;
+    color: var(--g-main_color)
+}
+
+.v_register .v-register-container {
+    padding-bottom: 30px;
+    position: relative
+}
+
+.v_register .v-register-container .v-register-title {
+    color: var(--g-main_color);
+    font-size: 28px;
+    font-weight: 600
+}
+
+.v_register .v-register-container .v-register-title img {
+    width: 32px;
+    margin-right: 8px
+}
+
+.v_register .v-register-container .v-register-card-box {
+    margin-top: 40px;
+    background: var(--g-main_less_bgColor);
+    box-shadow: 0 -40px 44px var(--g-black);
+    padding: 18px 37px;
+    border-radius: 24px 24px 0 0;
+    min-height: 520px
+}
+
+.v_register .v-register-container .v-register-card-box .v-register-card-title {
+    text-align: center;
+    color: var(--g-white);
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0 0 10px
+}
+
+.v_register .v-register-container .v-register-card-box .v-register-card-second-title {
+    line-height: 24px;
+    font-size: 16px;
+    color: var(--g-more-less-white);
+    text-align: center
+}
+
+.v_register .v-register-container .v-nav-list {
+    margin-top: 20px
+}
+
+.v_register .v-register-container .v-nav-list .v-nav-item {
+    font-weight: 600;
+    color: var(--g-more-less-white);
+    font-size: 16px;
+    line-height: 25px;
+    margin-right: 15px
+}
+
+.v_register .v-register-container .v-nav-list .v-nav-item.active {
+    color: var(--g-main_color)
+}
+
+.v_register .v-register-container .v-form {
+    border-radius: 8px
+}
+
+.v_register .v-register-container .v-form .v-form-item-out {
+    gap: 15px;
+    height: 60px;
+    margin-top: 15px
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item-out-left {
+    height: 100%;
+    padding: 0 10px 0 15px;
+    border-radius: 8px;
+    background: var(--g-main-bgColor)
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item-out-left .v-form-item-out-left-text {
+    font-size: 14px;
+    color: var(--g-white)
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item-out-left .iconfont {
+    padding-left: 4px;
+    font-size: 14px;
+    color: var(--g-less-white)
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item {
+    margin-top: 0 !important
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item .v-form-item-middle-input {
+    background: var(--g-main-bgColor) !important
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item .v-form-item-middle-input input {
+    padding-left: 10px !important
+}
+
+.v_register .v-register-container .v-form .v-form-item-out.v-form-item-out-have-right-send .v-form-item .v-form-item-middle-input input {
+    padding-left: 36px !important
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item-out-middle-right {
+    background: var(--g-main_color);
+    color: var(--g-white);
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 8px;
+    font-size: 14px
+}
+
+.v_register .v-register-container .v-form .v-form-item-out .v-form-item-out-middle-right .v-form-item-out-middle-right-text {
+    white-space: nowrap
+}
+
+.v_register .v-register-container .v-form .v-form-item {
+    margin-top: 15px;
+    width: 100%;
+    height: 60px;
+    background: var(--g-main-bgColor);
+    border-radius: 8px;
+    position: relative
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-left {
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    left: 10px
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-left .v-form-item-left-text {
+    font-size: 14px;
+    color: #999bac
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-left .iconfont {
+    line-height: 1;
+    font-size: 18px;
+    color: var(--g-less-white)
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-input {
+    border-radius: 8px;
+    height: 100%;
+    flex: 1
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-input input {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--g-white);
+    border: none;
+    outline: none;
+    padding: 12px 16px 12px 36px;
+    border-radius: 8px;
+    border-bottom: 2px solid transparent
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-input input.v-input-error {
+    border-bottom: 2px solid #FF4242
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-input input.v-input-focus {
+    border-bottom: 2px solid var(--g-main_color)
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-input input::placeholder {
+    color: var(--g-more-less-white);
+    font-size: 14px;
+    font-weight: 400
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-right {
+    position: absolute;
+    right: 0px;
+    padding: 0 15px 0 10px;
+    height: 100%
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-right .iconfont {
+    font-size: 18px;
+    color: var(--g-less-white)
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-right img {
+    width: 90px
+}
+
+.v_register .v-register-container .v-form .v-form-item .v-form-item-middle-right .v-form-item-middle-right-text {
+    color: var(--g-main_color);
+    font-size: 14px
+}
+
+.v_register .v-register-container .v-form .v-register-form-agree {
+    margin-top: 20px;
+    font-size: 14px;
+    color: var(--g-white)
+}
+
+.v_register .v-register-container .v-form .v-register-form-agree .iconfont {
+    font-size: 20px;
+    margin-right: 5px
+}
+
+.v_register .v-register-container .v-form .v-register-form-agree .iconfont.icon-xuanzhong {
+    color: var(--g-main_color)
+}
+
+.v_register .v-register-container .v-form .v-register-form-agree .v-register-form-agree-xieyi {
+    color: var(--g-main_color);
+    padding: 0 5px
+}
+
+.v_register .v-register-container .v-form .v-form-btn-box {
+    margin-top: 20px
+}
+
+.v_register .v-register-container .v-form .v-form-btn-box .v-form-btn {
+    width: 100%;
+    height: 45px;
+    background-color: var(--g-main_color);
+    color: var(--g-white);
+    border-radius: 5px;
+    font-weight: 700
+}
+
+.v_register .v-register-container .v-form .v-form-bottom {
+    margin-top: 15px
+}
+
+.v_register .v-register-container .v-form .v-form-bottom .v-form-bottom-item {
+    font-size: 14px
+}
+
+.v_register .v-register-container .v-form .v-form-bottom .v-form-bottom-item .v-form-bottom-item-title {
+    color: var(--g-white);
+    padding-right: 10px
+}
+
+.v_register .v-register-container .v-form .v-form-bottom .v-form-bottom-item .v-form-bottom-item-val {
+    color: var(--g-main_color)
+}
+
+.v_register .v-register-container .v-register-footer-tips {
+    font-size: 12px;
+    width: 100%;
+    margin-top: 40px
+}
+
+.v_register .v-register-container .v-register-footer-tips .v-register-footer-tips-val {
+    padding: 0 5px;
+    color: var(--g-main_color)
+}
